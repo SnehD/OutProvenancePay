@@ -299,15 +299,14 @@ external anchoring of evidence head digests; per-agent request signing; model ev
 
 ## Team
 
-`[Add author and team names here.]`
-
+Author: Sneha Dinkar Dalvi(sneha.dalvi2000@gmail.com)
 ## Links
 
 | | |
 |---|---|
-| Hosted demo | `[none yet: run locally, see Setup]` |
-| YouTube demo (under 3 min) | `[add public YouTube URL]` |
-| Submission page | `[add submission URL]` |
+
+| YouTube demo (under 3 min) | `[(https://youtu.be/wHCqnjKBB5A)|
+
 | Source repository | <https://github.com/SnehD/OutProvenancePay> |
 
 ## License
