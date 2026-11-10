@@ -9,25 +9,6 @@
 > payment has **not** been verified by the authors yet; PayPal-dependent failure tests use a clearly labelled mock.
 > Not production-ready. See [Known limitations](#known-limitations).
 
-## In 60 seconds
-
-AI agents will buy things for us. They can be tricked by prompt injection, leak private data, change purchase details,
-or cause **duplicate charges when a payment response is lost**. OutProvenance Pay puts a controlled workflow between the
-agent and the money:
-
-1. **Redact** private data before any AI call.
-2. **AI suggests** one catalogue product. It has no authority.
-3. **Verify the agent** (Ed25519-signed manifest).
-4. **Deterministic policy** from the trusted catalogue: allow up to 75.00, human approval up to 100.00, deny above.
-5. **Human approves the exact transaction** (one-time, expiring, bound to product, seller, amount, currency).
-6. **Backend creates and captures the PayPal order**; only PayPal's server response marks it paid.
-7. **Recover safely** if the response is lost: reconcile with PayPal first, never pay twice.
-8. **Signed receipt**, verifiable by anyone.
-9. **Signed, hash-linked evidence chain** of every step, labelled "observed at PayPal" or "internal".
-10. **Prove it**: Rogue Agent comparison and a 14-scenario **Attack Lab** run real attacks against the real code.
-
-**Try it in 30 seconds after starting the app:** sidebar -> **Rogue Agent** -> **Unleash the rogue agent**.
-
 ## Problem
 
 Agent-initiated payments break assumptions ordinary checkout makes: the buyer is a program that can be manipulated, it
