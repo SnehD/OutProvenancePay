@@ -335,7 +335,7 @@ external anchoring of evidence head digests; per-agent request signing; model ev
 | Hosted demo | `[none yet: run locally, see Setup]` |
 | YouTube demo (under 3 min) | `[add public YouTube URL]` |
 | Hackathon submission page | `[add submission URL]` |
-| Source repository | `[add public GitHub URL]` |
+| Source repository | <https://github.com/SnehD/OutProvenancePay> |
 
 ## License
 
