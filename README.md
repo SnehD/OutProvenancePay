@@ -4,7 +4,7 @@
 
 ![Overview](docs/images/01-overview.jpg)
 
-> **Status: hackathon prototype, PayPal Sandbox only.** Everything below runs locally with no PayPal credentials and no
+> **Status: prototype, PayPal Sandbox only.** Everything below runs locally with no PayPal credentials and no
 > AI key (checkout then says "setup required"). The backend refuses to start against PayPal's live API. A live Sandbox
 > payment has **not** been verified by the authors yet; PayPal-dependent failure tests use a clearly labelled mock.
 > Not production-ready. See [Known limitations](#known-limitations).
@@ -249,8 +249,7 @@ npm run lint
 npm run build
 ```
 Backend tests use a temporary database and throwaway keys, so they never touch `backend/data/`. PayPal tests use an
-in-memory fake: they prove our handling of PayPal's HTTP behaviour, **not** that live Sandbox works. Commands and
-results: [docs/VERIFICATION_REPORT.md](docs/VERIFICATION_REPORT.md).
+in-memory fake: they prove our handling of PayPal's HTTP behaviour, **not** that live Sandbox works.
 
 ### PayPal Sandbox setup
 
@@ -263,8 +262,7 @@ Sandbox only. **Never use live credentials or real money.**
 
 ## Demo walkthrough
 
-About five minutes, no credentials needed: [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md). Under-3-minute video script:
-[docs/FINAL_VIDEO_SCRIPT.md](docs/FINAL_VIDEO_SCRIPT.md).
+About five minutes, no credentials needed: [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md).
 
 ## Verifying a receipt without the app
 
@@ -306,18 +304,12 @@ described in [SECURITY.md](SECURITY.md).
 | [docs/PAYPAL_INTEGRATION.md](docs/PAYPAL_INTEGRATION.md) | Exact PayPal use, idempotency, recovery |
 | [docs/AI_USAGE.md](docs/AI_USAGE.md) | AI role, limits, tools used |
 | [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md) | Five-minute judge walkthrough |
-| [docs/FINAL_VIDEO_SCRIPT.md](docs/FINAL_VIDEO_SCRIPT.md), [docs/RECORD_THIS_DEMO.md](docs/RECORD_THIS_DEMO.md) | Under-3-minute video script and recording cheat sheet |
-| [docs/JUDGING_ALIGNMENT.md](docs/JUDGING_ALIGNMENT.md) | Requirement-by-requirement mapping |
 | [docs/KNOWN_LIMITATIONS.md](docs/KNOWN_LIMITATIONS.md) | Honest limits and next steps |
-| [docs/JUDGE_FAQ.md](docs/JUDGE_FAQ.md) | Short answers to likely questions |
-| [docs/SUBMISSION_DESCRIPTION.md](docs/SUBMISSION_DESCRIPTION.md) | Text for the submission form |
-| [docs/REPOSITORY_AUDIT.md](docs/REPOSITORY_AUDIT.md), [docs/VERIFICATION_REPORT.md](docs/VERIFICATION_REPORT.md) | What was checked and what was run |
 
 ## Tools used
 
-Python, FastAPI, SQLAlchemy, `cryptography`, React, TypeScript, Vite, PayPal Orders v2 (Sandbox), and Claude Code
-(Anthropic) in Visual Studio Code as a development assistant. The author must confirm the full list, including whether
-GitHub Copilot was used, in [docs/AI_USAGE.md](docs/AI_USAGE.md).
+Python, FastAPI, SQLAlchemy, `cryptography`, React, TypeScript, Vite and PayPal Orders v2 (Sandbox). The development
+tools used to build the project, including AI coding assistance, are disclosed in [docs/AI_USAGE.md](docs/AI_USAGE.md).
 
 ## Roadmap
 
@@ -334,7 +326,7 @@ external anchoring of evidence head digests; per-agent request signing; model ev
 |---|---|
 | Hosted demo | `[none yet: run locally, see Setup]` |
 | YouTube demo (under 3 min) | `[add public YouTube URL]` |
-| Hackathon submission page | `[add submission URL]` |
+| Submission page | `[add submission URL]` |
 | Source repository | <https://github.com/SnehD/OutProvenancePay> |
 
 ## License

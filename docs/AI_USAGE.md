@@ -67,15 +67,12 @@ simulation in the browser; the protected side is real backend calls.
 
 ## Tools used to build the project
 
-> The author must confirm and complete this list before submission. Only tools that were actually used should remain.
-
-| Tool | How it was used | Confirmed |
-|------|-----------------|-----------|
-| Claude Code (Anthropic), in Visual Studio Code | Wrote and reviewed much of the code, tests, UI and documentation under the author's direction; ran the test suite, builds and a headless-browser click-through | Yes (used in this repository's development; commits carry a `Co-Authored-By` line when made through it) |
-| GitHub Copilot in Visual Studio Code | `[Author: state whether Copilot was used and for what, or delete this row]` | **To be confirmed by the author** |
-| Python, FastAPI, SQLAlchemy, Pydantic, `cryptography`, `httpx`, pytest | Backend, signing, HTTP client, tests | Yes |
-| React, TypeScript, Vite, `qrcode` | Frontend | Yes |
-| PayPal Orders v2 REST API (Sandbox) | Payment creation and capture | Yes (mocked in tests; live not yet exercised) |
-| Microsoft Edge (headless, via `puppeteer-core`) | Screenshots in `docs/images/` and UI checks | Yes |
+| Tool | How it was used |
+|------|-----------------|
+| Claude Code (Anthropic), in Visual Studio Code | AI coding assistant. Used, under the author's direction, to help write and review code, tests, UI and documentation, and to run the test suite, builds and a headless-browser click-through. Commits made through it carry a `Co-Authored-By` line. |
+| Python, FastAPI, SQLAlchemy, Pydantic, `cryptography`, `httpx`, pytest | Backend, signing, HTTP client, tests |
+| React, TypeScript, Vite, `qrcode` | Frontend |
+| PayPal Orders v2 REST API (Sandbox) | Payment creation and capture (mocked in tests; live Sandbox not yet exercised) |
+| Microsoft Edge (headless, via `puppeteer-core`) | Screenshots in `docs/images/` and UI checks |
 
 No third-party music, images, fonts or other creative assets are included.

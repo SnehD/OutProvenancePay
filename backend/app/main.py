@@ -59,7 +59,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app = FastAPI(
         title="OutProvenance Pay API",
         version="0.1.0",
-        description="Hackathon prototype: safer AI-agent purchases. Not a certified security product.",
+        description="Prototype: safer AI-agent purchases. Not a certified security product.",
     )
     app.state.settings = settings
     app.state.engine = engine

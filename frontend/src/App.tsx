@@ -66,7 +66,7 @@ export default function App() {
       <main id="main" className="main" tabIndex={-1}>
         <Current />
         <footer className="foot muted small">
-          Prototype for a hackathon. Sandbox only; not a certified or guaranteed-secure payment product. Signatures prove integrity, not truth.
+          Prototype. Sandbox only; not a certified or guaranteed-secure payment product. Signatures prove integrity, not truth.
         </footer>
       </main>
     </div>

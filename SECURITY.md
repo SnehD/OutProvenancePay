@@ -1,6 +1,6 @@
 # Security policy
 
-OutProvenance Pay is a hackathon prototype for the PayPal **Sandbox**. It is not production software and has
+OutProvenance Pay is a prototype for the PayPal **Sandbox**. It is not production software and has
 not been audited or certified.
 
 ## Reporting a vulnerability

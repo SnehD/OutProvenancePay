@@ -1,6 +1,6 @@
 # Known limitations
 
-OutProvenance Pay is a hackathon prototype. It is **not production-ready, not audited and not certified.** This page
+OutProvenance Pay is a prototype. It is **not production-ready, not audited and not certified.** This page
 lists what it does not do, and a realistic improvement for each.
 
 | # | Limitation | Why it matters | Realistic improvement |
